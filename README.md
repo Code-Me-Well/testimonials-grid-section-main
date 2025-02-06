@@ -29,7 +29,7 @@ Users should be able to:
 
 #### Mobile Design
 
-I decided not to attach the mobile screenshot here since it is pretty much long so if you need to see it you can navigate to the [images directory](https://github.com/Code-Me-Well/four-card-feature-section-master/blob/main/images/mobile-result.png) and it should be there.
+I decided not to attach the mobile screenshot here since it is pretty much long so if you need to see it you can navigate to the [images directory](images/mobile-design.png) and it should be there.
 
 ### Links
 
