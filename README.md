@@ -25,7 +25,7 @@ Users should be able to:
 
 #### Desktop Design
 
-![Sample of the desktop design I built](./images/desktop-result.jpeg)
+![Sample of the desktop design I built](images/desktop-design.jpeg)
 
 #### Mobile Design
 
