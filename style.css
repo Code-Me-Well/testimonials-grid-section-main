@@ -1,0 +1,136 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Barlow Semi Condensed", serif;
+    }
+
+    body{
+        background: hsl(210, 46%, 95%);
+    }
+
+    .testmonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        gap: 30px;
+        padding: 20px;
+        grid-template-areas: 
+        "dan  dan  jon  kira"
+        "jea  pat  pat  kira";
+    }
+
+    .testmonial-card {
+        border-radius: 10px;
+        position: relative;
+        padding: 15px 25px;
+    }
+
+    .background-image{
+        position: absolute;
+        right: 50px;
+        z-index: -1;
+    }
+
+    .testmonial-card > *{
+        margin-top: 15px;
+    }
+
+    .testmonial-card > h4{
+        z-index: 3;
+    }
+
+    .testmonial-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .profile img {
+        border-radius: 50%;
+        width: 30px;
+    }
+
+    #pat img, #dan img {
+        border: 1px solid transparent;
+        background-clip: padding-box;
+        padding: 1px;
+    }
+
+    #dan img{
+        background: hsla(263, 70%, 66%, 0.9);
+    }
+
+    #pat img{
+        background: hsl(263, 55%, 52%);
+    }
+
+
+    .profile .profession {
+        display: block;
+        font-size: small;
+        color: hsla(210, 46%, 95%, 0.5);
+    }
+
+    #kira, #jean {
+        color: hsla(217, 19%, 35%, 0.5);
+    }
+
+    article blockquote{
+        color: hsla(210, 46%, 95%, 0.5); 
+    }
+
+    article{
+        background: hsl(0, 0%, 100%);
+        color: hsl(217, 19%, 35%) ;
+    }
+
+    .testmonials > article:first-child {
+        background: hsl(263, 55%, 52%);
+        color: hsl(210, 46%, 95%);
+        grid-area: dan;
+    }
+
+
+    .testmonials > article:nth-child(2){
+        background: hsl(217, 19%, 35%);
+        color: hsl(210, 46%, 95%);
+        grid-area: jon;
+    }
+
+    .testmonials > article:nth-child(3){
+        grid-area: jea;
+    }
+    .testmonials > article:nth-child(3) blockquote {
+        color:hsla(217, 19%, 35%,0.5);
+    }
+
+    .testmonials > article:nth-child(4){
+        background: hsl(219, 29%, 14%);
+        color: hsl(210, 46%, 95%);
+        grid-area: pat;
+    }
+
+    .testmonials > article:nth-child(5){
+        grid-area: kira;
+    }
+    .testmonials > article:nth-child(5) blockquote {
+        color:hsla(217, 19%, 35%, 0.5);
+    }
+
+    @media (max-width:375px) {
+        .testmonials{
+            grid-template-areas: 
+            "dan dan dan dan"
+            "jon jon jon jon"
+            "jea jea jea jea"
+            "pat pat pat pat"
+            "kira kira kira kira"
+            ;
+        }
+    }
